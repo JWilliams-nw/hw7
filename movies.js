@@ -7,6 +7,7 @@ firebase.auth().onAuthStateChanged(async function(user) {
     email: user.email
   })
 
+  
  
   let apiKey = '8021bddc0d0f29db46ca9b71b6bd47db'
   let response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US`)
